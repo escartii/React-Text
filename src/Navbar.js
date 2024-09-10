@@ -27,10 +27,10 @@ function Navbar() {
           rel="noopener noreferrer"
           className="coffee-button"
         >
-          ☕ Buy me a coffee
+          ☕ 
         </a>
         <a
-          href="https://github.com/tuusuario" // Reemplaza con tu enlace de GitHub
+          href="https://github.com/escartii" // Reemplaza con tu enlace de GitHub
           target="_blank"
           rel="noopener noreferrer"
           className="github-button"

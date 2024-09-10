@@ -1,7 +1,8 @@
+// App.js
+
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './Navbar'; // Importar el componente Navbar correctamente
-
+import Navbar from './Navbar'; // Importa el componente Navbar
 
 function App() {
   const [text, setText] = useState('');
@@ -17,6 +18,8 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar /> {/* Asegúrate de incluir el componente Navbar aquí */}
+      
       {/* Fondo estrellado */}
       <div className="starry-background"></div>
 
