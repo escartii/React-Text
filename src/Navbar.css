@@ -1,0 +1,86 @@
+/* Navbar.css */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centramos todo el contenido horizontalmente */
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(11, 13, 23, 0.8); /* Fondo oscuro semi-transparente */
+  color: #fff;
+  z-index: 10;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Alineamos los elementos verticalmente */
+  margin-right: 20px; /* Añadimos un margen a la derecha para separar los botones */
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link i {
+  margin-right: 5px;
+}
+
+.navbar-link:hover {
+  color: #8be9fd; /* Color al pasar el mouse */
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.coffee-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ffb800; /* Color del botón de Buy Me a Coffee */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.coffee-button:hover {
+  background-color: #ff8c00; /* Color de hover para el botón de Buy Me a Coffee */
+  transform: scale(1.05);
+}
+
+.github-button {
+  padding: 8px;
+  background-color: #333; /* Color del botón de GitHub */
+  border: none;
+  border-radius: 50%; /* Botón circular */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.github-icon {
+  width: 20px; /* Ajusta el tamaño del ícono */
+  height: 20px;
+  fill: #fff; /* Color blanco para el ícono */
+}
+
+.github-button:hover {
+  background-color: #24292e; /* Color de hover para el botón de GitHub */
+  transform: scale(1.1);
+}
