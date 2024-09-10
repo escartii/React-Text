@@ -42,6 +42,7 @@
   gap: 10px;
 }
 
+/* Botón de Buy Me a Coffee */
 .coffee-button {
   padding: 8px 15px;
   font-size: 18px;
@@ -61,27 +62,35 @@
   transform: scale(1.05);
 }
 
-.github-button {
-  padding: 18px;
-  background-color: #333; /* Color del botón de GitHub */
-  border: none;
-  border-radius: 50%; /* Botón circular */
-  cursor: pointer;
+/* Botón de "Star on GitHub" */
+.github-star-button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s, transform 0.3s;
+  padding: 8px 12px;
+  background-color: #333; /* Fondo oscuro para el botón de GitHub */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.github-star-button:hover {
+  background-color: #444d56; /* Color de hover */
+  transform: scale(1.05);
 }
 
 .github-icon {
-  width: 30px; /* Ajusta el tamaño del ícono */
-  height: 30px;
-  fill: #fff; /* Color blanco para el ícono */
+  width: 16px; /* Tamaño ajustado del ícono */
+  height: 16px;
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+  fill: currentColor; /* Color actual del texto */
 }
 
-.github-button:hover {
-  background-color: #24292e; /* Color de hover para el botón de GitHub */
-  transform: scale(1.1);
+.star-count {
+  margin-left: 5px;
+  color: #ffffff; /* Color blanco para el contador de estrellas */
+  font-weight: bold; /* Negrita para el contador de estrellas */
 }
