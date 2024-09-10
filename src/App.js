@@ -13,7 +13,6 @@ function App() {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
-    alert('¡Texto copiado!');
   };
 
   return (
@@ -37,6 +36,9 @@ function App() {
             Copiar Texto
           </button>
         </div>
+
+        <h2 className="subtitle">Contador de carácteres</h2>
+        <p className="counter">{text.length}</p>
         <footer className="footer">
           <p>Transforma tu texto fácilmente con nuestra herramienta.</p>
           <p>
