@@ -1,25 +1,23 @@
-/* Estilos generales */
+/* App.css */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000000; /* Fondo oscuro */
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
   color: #fff;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden; /* Evitar el scroll */
-  position: relative; /* Posicionamiento relativo para las estrellas */
+  /* Eliminamos display: flex; y height: 100vh; */
+  /* Eliminamos overflow: hidden; para permitir el scroll */
+  position: relative;
 }
 
 .App {
-  max-width: 600px;
+  max-width: 800px; /* Aumenté el ancho máximo para acomodar más contenido */
   margin: 0 auto;
   padding: 20px;
-  position: relative; /* Posicionamiento relativo para el contenido */
-  z-index: 1; /* Asegura que el contenido esté encima del fondo */
+  position: relative;
+  z-index: 1;
+  margin-top: 60px; /* Mantiene el margen superior para el navbar */
 }
 
 .content {
@@ -27,7 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 2; /* Contenido sobre el fondo estrellado */
+  z-index: 2;
 }
 
 .title {
@@ -35,19 +33,21 @@ body {
   background: linear-gradient(90deg, #ff79c6, #8be9fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 20px 0;
+  margin: 30px 0;
+  margin-top: 15px;
 }
 
 .subtitle {
   font-size: 18px;
   color: #bdbdbd;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .text-box {
   width: 100%;
-  max-width: 500px;
-  height: 100px;
+  max-width: 700px;
+  height: 200px; /* Aumenté la altura para más espacio de texto */
   margin: 20px 0;
   padding: 10px;
   font-size: 16px;
@@ -59,24 +59,54 @@ body {
 }
 
 .buttons {
-  margin-top: 20px;
-}
-
-.copy-button {
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #000;
-  background-color: #8be9fd;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
+.icon-button {
+  display: flex;
+  align-items: center;
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-button .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.icon-button:hover {
+  background-color: #3730a3;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  background-color: #10b981;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .copy-button:hover {
-  background-color: #ff79c6;
-  transform: scale(1.05);
+  background-color: #059669;
+}
+
+.counter {
+  font-size: 16px;
+  color: #bdbdbd;
+  margin: 5px 0;
 }
 
 .footer {
@@ -97,7 +127,7 @@ body {
 
 /* Fondo estrellado */
 .starry-background {
-  position: absolute;
+  position: fixed; /* Cambiado a fixed para que cubra toda la pantalla */
   top: 0;
   left: 0;
   width: 100%;
@@ -143,8 +173,55 @@ body {
   }
 }
 
+
 .subtitle {
   font-size: 18px;
   color: #bdbdbd;
   margin-top: 50px;
 }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-button .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.icon-button:hover {
+  background-color: #3730a3;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  background-color: #10b981;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #059669;
+}
+

@@ -1,0 +1,12 @@
+# Habilitar el motor de reescritura de Apache
+RewriteEngine On
+
+# Establecer la ruta base del sitio
+RewriteBase /
+
+# No reescribir la ruta de archivos existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las solicitudes al archivo index.html
+RewriteRule ^.*$ /index.html [L]

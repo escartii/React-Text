@@ -1,18 +1,19 @@
 /* Navbar.css */
-
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centramos todo el contenido horizontalmente */
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+  height: 60px; /* Altura fija para el navbar */
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   z-index: 10;
 }
+
 
 .navbar-items {
   display: flex;
